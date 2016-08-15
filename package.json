@@ -42,7 +42,8 @@
     "intercom"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.3"
+    "ember-cli-babel": "^5.1.3",
+    "fastboot-filter-initializers": "0.0.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
