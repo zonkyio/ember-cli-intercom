@@ -9,7 +9,7 @@ export default Ember.Service.extend({
   boot(params = {}) {
     if (this.get('fastboot.isFastBoot')) { return; }
     if (!window.Intercom) { return; }
-    let config = getOwner(this)._lookupFactory('config:environment');
+    let config = getOwner(this).resolveRegistration('config:environment');
     params['app_id'] = config['ember-cli-intercom'].appId;
     window.Intercom('boot', params);
   },
